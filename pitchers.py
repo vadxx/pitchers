@@ -64,7 +64,7 @@ def show_res(path, target):
 	if path is not None:
 		print("Требуется шагов: ", len(path)-1)
 		for node in path:
-			print( node[0], ',', node[1])
+			print(node)
 	else:
 		print ("Нельзя с такими кувшинами получить", target, "л.")
 
@@ -82,6 +82,7 @@ def main():
 	
 	start = (0,0)
 	graph = create_graph(N, M)
+	print(graph)
 
 	print("\nРезультат:")
 	print("Brute Force (Полный перебор): ")
